@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Airlines System",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "call \"D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat\" && cl.exe /EHsc *.cpp /I\"C:\\Program Files\\MySQL\\MySQL Connector C++ 9.4\\include\\jdbc\" /I\"C:\\Users\\anesh\\vcpkg\\installed\\x64-windows\\include\" /link /LIBPATH:\"C:\\Program Files\\MySQL\\MySQL Connector C++ 9.4\\lib64\\vs14\" /LIBPATH:\"C:\\Users\\anesh\\vcpkg\\installed\\x64-windows\\lib\" mysqlcppconn.lib icuuc.lib icuin.lib icudt.lib odbc32.lib"
+      ],
+      "options": {
+        "shell": {
+          "executable": "C:\\Windows\\System32\\cmd.exe"
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$msCompile"]
+    }
+  ]
+}

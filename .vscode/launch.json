@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug C SQL Project",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/airlinesystem_main.exe",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true
+    }
+  ]
+}
